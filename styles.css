@@ -1,0 +1,53 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.container--dark {
+  background: #1e202a;
+  height: 100vh;
+  color: white;
+}
+.container--light {
+  background: #fff;
+  color: #1e202a;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 80px;
+  height: 30px;
+  background: linear-gradient(#378fe6, #3eda82);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 19px;
+  height: 19px;
+  background: #252a41;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+label:active:after {
+  width: 19px;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+  background: #aeb3cb;
+}
+
+/*# sourceMappingURL=styles.css.map */
