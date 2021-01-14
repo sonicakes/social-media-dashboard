@@ -3,7 +3,9 @@ body {
   font-size: 14px;
 }
 
+
 .container {
+
   &--dark {
     background: hsl(230, 17%, 14%);
     height: 100vh;
@@ -64,10 +66,64 @@ input:checked + label:after {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    border-top-width: 2px;
+    border-top-style: solid;
+
+    &--smaller {
+        height: 100px;
+    }
+
+    &--fb {
+        border-top-color: hsl(208, 92%, 53%);
+    }
+
+    &--twitter {
+        border-top-color: 2px solid hsl(203, 89%, 53%);
+    }
+
+    &--insta {
+        border-top: 2px solid  hsl(329, 70%, 58%);
+    }
+
+    &--youtube {
+        border-top: 2px solid hsl(348, 97%, 39%);
+
+    }
+
+    &__number {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    &__acc-name {
+        color: hsl(228, 34%, 66%);
+        font-weight: 700;
+    }
+
+    &__change {
+        &--positive {
+            color: hsl(163, 72%, 41%);
+        }
+
+        &--negative {
+            color: hsl(356, 69%, 56%);
+        }
+    }
 }
 
 .highlights {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-column-gap: 30px;
+margin-top: 50px;
+}
+
+.overviews {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-column-gap: 30px;
+grid-row-gap: 30px;
 }
