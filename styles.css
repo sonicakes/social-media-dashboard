@@ -57,15 +57,18 @@ input:checked + label:after {
   background: #252a41;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 200px;
   height: 200px;
-  justify-content: center;
   border-top-width: 2px;
   border-top-style: solid;
 }
+.card--larger {
+  align-items: center;
+  justify-content: center;
+}
 .card--smaller {
   height: 100px;
+  border: none;
 }
 .card--fb {
   border-top-color: #198ff5;
